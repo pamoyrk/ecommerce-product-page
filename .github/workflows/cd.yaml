@@ -37,5 +37,7 @@ jobs:
       with:
         context: .
         push: true
-        # Tag the image with the repository name and the commit SHA
-        tags: ghcr.io/${{ github.repository }}:${{ github.sha }}
+        # Tag the image with the repository name and the commit SHA and latest
+        tags: |
+          ghcr.io/${{ github.repository }}:${{ github.sha }}
+          ghcr.io/${{ github.repository }}:latest
