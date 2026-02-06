@@ -66,5 +66,7 @@ jobs:
     # This step compiles your React project for production, verifying that it can be successfully built
     # and catches any build-time errors.
     - name: Build project # Indented 2 spaces from 'steps'
+
       run: npm run build # Indented 2 spaces from 'name' 
     # End of file
+
